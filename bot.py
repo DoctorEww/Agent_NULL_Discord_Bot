@@ -4,8 +4,8 @@
 
 import discord
 
-TOKEN = "TODO"
-GUILD = "TODO"
+TOKEN = "Nzc0MzI0MjA2MDk1NTY0ODcw.X6WHnA.dS7eYH795KnxZJVJtxQ9F3Q5w1k"
+GUILD = "776199309686210591"
 
 client = discord.Client()
 
