@@ -33,5 +33,7 @@ async def on_message(message):
         return
     if message.content == 'knock knock':
         await message.channel.send("who's there? JUST KIDDING THIS IS A DISCORD BOT HAHA")
+    if message.content == 'what':
+        await message.channel.send("CHICKEN BUTT")
 
 client.run(TOKEN)
