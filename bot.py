@@ -43,5 +43,6 @@ async def on_message(message):
         await message.channel.send("baby dont hurt me")
     if message.content == 'dont hurt me':
         await message.channel.send("no more")
-
+    if message.content == 'dumb':
+        await message.channel.send("HEY! NO CURSING")
 client.run(TOKEN)
