@@ -4,8 +4,11 @@
 
 import discord
 
-TOKEN = "TODO"
-GUILD = "TODO"
+with open('secrets.txt') as f:
+    content = f.readlines()
+
+TOKEN = content[0].strip("\n")
+GUILD = content[1].strip("\n")
 
 client = discord.Client()
 
@@ -24,7 +27,7 @@ async def on_ready():
 async def on_member_join(member):
     await member.create_dm()
     await member.dm_channel.send(
-        f'Hi {member.name}, welcome to my Discord server!'
+        f'Hi {member.name}, welcome to our sensitive discord server! Do not leak any messages especially the flag...'
     )
 
 @client.event
