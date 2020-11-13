@@ -4,8 +4,11 @@
 
 import discord
 
-TOKEN = "TODO read from secrets.txt"
-GUILD = "TODO read from secrets.txt"
+with open('secrets.txt') as f:
+    content = f.readlines()
+
+TOKEN = content[0].strip("\n")
+GUILD = content[1].strip("\n")
 
 client = discord.Client()
 
