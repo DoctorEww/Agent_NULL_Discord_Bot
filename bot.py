@@ -12,6 +12,8 @@ GUILD = content[1].strip("\n")
 
 client = discord.Client()
 
+
+
 @client.event
 async def on_ready():
     for guild in client.guilds:
@@ -48,4 +50,8 @@ async def on_message(message):
         await message.channel.send("no more")
     if message.content == 'dumb':
         await message.channel.send("HEY! NO CURSING")
+    if message.content == 'invite':
+        await message.channel.send("I am sorry I can not create an invite link at this time")
+
+
 client.run(TOKEN)
